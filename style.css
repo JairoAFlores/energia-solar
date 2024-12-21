@@ -1,0 +1,68 @@
+html {
+  font-family: "Montserrat", sans-serif; /*utilizar la fuente que se descargo de google font*/
+}
+
+body { /*resetear la etiqueta de body (porque ya viene con valores predeterminados*/
+    margin: 0; /*darle un margen de 0*/
+    background-color: #efefef;/* fondo de gris claro para que las tarjetas resalten del fondo*/
+}
+
+header {
+    background-color: #364552; /*color de fondo del titulo*/
+    color: white;/*color de las letras*/
+    padding: .2rem 2rem;/*ancho del fondo con respoecto a las letras*/
+}
+
+header h1 {
+    font-size: 4rem;/*agranda las letras 4 veces el tamaño de la fuente que seria 16*4*/
+    text-align: center;/*es para centrar el texto*/
+}
+
+.container {
+    width: 400px;/*ancho de 400px es porque las imagenes estan usando un ancho de 400px*/
+    margin: 0 auto;/*es para que el contenido se centre*/
+}
+
+section article {
+    transition: box-shadow 0.3s ease;/*que propiedades de css sean animaciones se le indica el inicio y mediante un evento el final
+    box shadow sin combra es el inicio y el final es el box shadow con sombra 
+    (solo animar la seccion boxshadow, duracion de la animacion, ease para desacelerar la animacion*/
+    background-color: #fff;/*Color de fondo*/
+    margin: 1rem 0;/*separacion entre articulos (1rem es vertical, 0 es horizontal*/
+    border-radius: 0.5rem;/*el borde lo hace circular*/
+    padding: 0.25rem 0;/*es para separar las letras de la linea superior e inferior(2 rem vertical y 0 horizontal*/
+    cursor: pointer;/*cambia el cursor por una manita cuando entra al post (tarjeta)*/
+
+}
+
+section article:hover {/*para darle una sombra cuando el cursor este encima del post o tarjeta*/
+    box-shadow: 0 0.5rem 0.4rem rgba(0,0,0,0.3);/* 0 es para la derecha, 0.1rem es para abajo, 0.4rem es para la difuminacion, por ultimo el color*/
+}
+
+section article h2, section article p {
+    margin: 1rem;/*margen del titulo y texto a la derecha*/
+}
+
+footer {/*Pie de pagina*/
+    background-color: #222;/*Color de fondo*/
+    padding: 3rem;/*tamaño del fondo con respecto a la fuente*/
+    color: #fff;/*color de las letras*/
+}
+
+footer section {
+    float: right;
+}
+
+footer p {
+    margin: 2rem;/*margen del parrafo*/
+}
+
+footer a {
+    transition: color 0.3s ease; /*animacion a los links (animacion a la propiedad color, 0.3s duracion, ease velocidad de termino*/
+    color: white;/*Color de las letras de los vinculos*/
+    text-decoration: none;/*quita el indicador de hipervnculo o color azul*/
+    
+}
+footer a:hover {/*darle un color azul cuando pasa el cursor sobre las letras*/
+    color: blue;
+}
